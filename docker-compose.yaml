@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  first-react-app:
+    build: .
+    container_name: first-react-app-container
+    volumes:
+      - /users-ben/first-react-app/app
+      - /users-ben/first-react-app/app/node_modules
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
